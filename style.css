@@ -119,8 +119,13 @@ footer h3 {
   opacity: 0;
   transition: all 500ms ease-in-out;
 }
+.animate-from-down {
+  transform: translateY(5%);
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
 .slideIn {
-  transform: translateX(0);
+  transform: translate(0);
   opacity: 1;
 }
 

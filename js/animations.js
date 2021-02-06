@@ -1,6 +1,7 @@
 const elements = [
   ...document.querySelectorAll('.animate-from-right'),
   ...document.querySelectorAll('.animate-from-left'),
+  ...document.querySelectorAll('.animate-from-down'),
 ];
 elements.forEach((element) => {
   const observer = new IntersectionObserver(
