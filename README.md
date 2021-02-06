@@ -19,8 +19,8 @@ walidacje, multimedia, footer, tlumaczenia na PL ... , aktualizacja wersji font 
 
 BURZA MÓZGÓW:
 
-Igor - Zmiana Boostrapa na zewnętrzne źródło, wjazd/wyjazd elemetów na scroll
-Ania - linkowanie, obrazki
-Kuba - animacja navbara
-Grzegorz - dodanie loadingu (page load), zmiana koloru etc.
-Karolina - zamiana fontawesome (nowa wersja, zmiana ikon na koronawirusowe)
+1. Igor - Zmiana Boostrapa na zewnętrzne źródło, wjazd/wyjazd elemetów na scroll
+2. Ania - linkowanie, obrazki
+3. Kuba - animacja navbara
+4. Grzegorz - dodanie loadingu (page load), zmiana koloru etc.
+5. Karolina - zamiana fontawesome (nowa wersja, zmiana ikon na koronawirusowe)
