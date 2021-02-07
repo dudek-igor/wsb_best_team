@@ -22,10 +22,26 @@ html {
 .navbar .navbar-nav .nav-link {
   color: white;
   padding-top: 0.6rem;
+  transition: all 0.2s;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: yellow;
+  transform: translateY(-5px);
+  color: rgb(146, 44, 44);
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(146, 44, 44);
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }
 
 /* Landing */
@@ -83,6 +99,12 @@ html {
   width: 80%;
   margin: 0 auto;
 }
+
+.embed-responsive{
+  width: 70%;
+  margin: 2rem auto;
+}
+
 @media all and (max-width: 768px) {
   .client {
     max-width: 30vw;
