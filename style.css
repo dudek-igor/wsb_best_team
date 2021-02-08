@@ -70,6 +70,64 @@ html {
 .caption h3 {
   padding-bottom: 1rem;
 }
+
+/* popup */
+.popup {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.popup-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__box {
+  position: relative;
+  background-color: rgb(247, 245, 245);
+  border-radius: 10px;
+  width: 40%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup__box h3 {
+  padding: 2rem 0;
+  font-size: 1.3rem;
+}
+
+.popup__box button {
+  margin: 2rem 0;
+}
+
+.popup__box input {
+  width: 50%;
+}
+
+.popup-close {
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  right: 10px;
+  font-weight: bold;
+}
+
 /* features */
 .jumbotron {
   color: black;
@@ -89,7 +147,7 @@ html {
   border-radius: 50%;
   max-width: 90%;
 }
-.client:hover{
+.client:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.3);
@@ -100,7 +158,7 @@ html {
   margin: 0 auto;
 }
 
-.embed-responsive{
+.embed-responsive {
   width: 70%;
   margin: 2rem auto;
 }
