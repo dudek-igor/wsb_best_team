@@ -54,12 +54,13 @@
         </div>
       </div>
       <div class="text-center caption">
-        <h1>Witaj na RWD stornie</h1>
+        <h1>Witaj na stronie o wirusie Sars-Cov-2</h1>
         <h3>
-          Aby nauczyć się więcej o frameworku UI - Bootstrap kliknij poniezej
+          Aby dowiedzieć się więcej o aktualnych zakażeniach, kliknij
+                    w przycisk poniżej:
         </h3>
-        <a href="#course" class="btn btn-outline-light btn-lg"
-          >Przenieś mnie do kursu</a
+        <a href="#infections" class="btn btn-outline-light btn-lg"
+          >Sprawdź statystyki</a
         >
       </div>
       <!-- End Inner Home -->
@@ -81,6 +82,31 @@
         </div>
       </div>
     </section>
+    <section id="infections">
+      <section class="text-center col-12 animate-from-down">
+        <div>
+            <h2>
+              Poznaj aktualne statystyki dotyczące zakażeń Sars-Cov-2
+            </h2>
+        </div>
+        <p id="last-update"></p>
+        <div class="row col-12">
+          <div class="col-4">
+            <h3>Zachorowało łącznie:</h3>
+            <span id="infections-counter" class="covid-counter"></span>
+              <p id="last-update"></p>
+            </div>
+            <div class="col-4">
+              <h3>Wyzdrowiało:</h3>
+              <span id="recovered-counter" class="covid-counter"></span>
+              <p id="last-update"></p>
+            </div>
+            <div class="col-4">
+              <h3>Zmarłych:</h3>
+              <span id="deceased-counter" class="covid-counter"></span>
+            </div>
+        </div>
+      </section>
     <!--- End  Section course  --->
     <!--- Start Section features  --->
     <section id="features">
