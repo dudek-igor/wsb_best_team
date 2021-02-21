@@ -282,7 +282,7 @@ h2{
 	text-align: center;
 }
 
-.btn {
+.btn1 {
 	display: inline-block;
 	width: 40px;
 	height: 40px;
@@ -295,16 +295,16 @@ h2{
 	position: relative;
 }
 
-.btn i {
+.btn1 i {
 	line-height: 90px;
 	font-size: 36px;
 	transition: 0.2 linear;
 }
-.btn:hover i {
+.btn1:hover i {
 	transform: scale(1.3);
 	color: #f1f1f1;
 }
-.btn::before{
+.btn1::before{
 content: "";
 position: absolute;
 width: 120%;
@@ -314,7 +314,7 @@ transform: rotate(45deg);
 left: -110%;
 top: 90%;
 }
-.btn:hover::before{
+.btn1:hover::before{
 	animation: aaa 0.7s 1;
 	top: -10%;
 	left: -10%;
