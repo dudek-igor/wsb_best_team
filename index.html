@@ -54,12 +54,13 @@
         </div>
       </div>
       <div class="text-center caption">
-        <h1>Witaj na RWD stornie</h1>
+        <h1>Witaj na stronie o wirusie Sars-Cov-2</h1>
         <h3>
-          Aby nauczyć się więcej o frameworku UI - Bootstrap kliknij poniezej
+          Aby dowiedzieć się więcej o aktualnych zakażeniach, kliknij
+                    w przycisk poniżej:
         </h3>
-        <a href="#course" class="btn btn-outline-light btn-lg"
-          >Przenieś mnie do kursu</a
+        <a href="#infections" class="btn btn-outline-light btn-lg"
+          >Sprawdź statystyki</a
         >
       </div>
       <!-- End Inner Home -->
@@ -68,12 +69,44 @@
     <!--- Start Section course  --->
     <section id="course">
       <div class="text-center col-12 animate-from-down">
-        <p>Zobacz więcej w dokumentacji:</p>
-        <a class="btn btn-outline-dark btn-md" href="https://www.gov.pl/web/koronawirus" target="_blank"
-          >Pokaz stronę</a
-        >
+        <p>Chcesz wiedzieć więcej o szczepieniach?</p>
+        <a class="btn btn-outline-danger btn-md popup-btn">Subskybuj</a>
+      </div>
+      <div class="popup">
+        <div class="popup__box">
+          <h3>Subskybuj aby otrzymywać aktualności na temat szczepień</h3>
+          <input type="text" class="form-control" placeholder="Imię" />
+          <input type="email" class="form-control" placeholder="Email" />
+          <button class="btn btn-danger btn-md popup-sub">Subskrybuj</button>
+          <span class="popup-close">X</span>
+        </div>
       </div>
     </section>
+    <section id="infections">
+      <section class="text-center col-12 animate-from-down">
+        <div>
+            <h2>
+              Poznaj aktualne statystyki dotyczące zakażeń Sars-Cov-2
+            </h2>
+        </div>
+        <p id="last-update"></p>
+        <div class="row col-12">
+          <div class="col-4">
+            <h3>Zachorowało łącznie:</h3>
+            <span id="infections-counter" class="covid-counter"></span>
+              <p id="last-update"></p>
+            </div>
+            <div class="col-4">
+              <h3>Wyzdrowiało:</h3>
+              <span id="recovered-counter" class="covid-counter"></span>
+              <p id="last-update"></p>
+            </div>
+            <div class="col-4">
+              <h3>Zmarłych:</h3>
+              <span id="deceased-counter" class="covid-counter"></span>
+            </div>
+        </div>
+      </section>
     <!--- End  Section course  --->
     <!--- Start Section features  --->
     <section id="features">
@@ -177,11 +210,50 @@
                 <cite>Maria z Wrocławia</cite>
               </footer>
             </div>
+      <div class="row text-center card-box">
+        <div class="col-md-5 card animate-from-left">
+          <div class="client">
+            <img src="img/client1.png" alt="client" class="client-img" />
+          </div>
+          <div class="card-content">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, quaerat. Autem architecto fugiat incidunt cum, commodi
+              culpa quas nostrum quisquam voluptatem consectetur ipsum eum unde
+              omnis nobis soluta quod hic?
+            </p>
+            <hr class="line" />
+            <footer class="blockquote-footer">
+              <cite>Marek z Legnicy</cite>
+            </footer>
+          </div>
+        </div>
+
+        <div class="col-md-5 card animate-from-left">
+          <div class="client">
+            <img src="img/client2.png" alt="client" class="client-img" />
+          </div>
+          <div class="card-content">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, quaerat. Autem architecto fugiat incidunt cum, commodi
+              culpa quas nostrum quisquam voluptatem consectetur ipsum eum unde
+              omnis nobis soluta quod hic?
+            </p>
+            <hr class="line" />
+            <footer class="blockquote-footer">
+              <cite>Marek z Legnicy</cite>
+            </footer>
           </div>
         </div>
       </div>
+
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PSnSo9kYlH4" allowfullscreen></iframe>
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/PSnSo9kYlH4"
+          allowfullscreen
+        ></iframe>
       </div>
     </section>
 
